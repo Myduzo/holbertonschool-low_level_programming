@@ -14,7 +14,6 @@ for (X = 'a'; X <= 'z'; X++)
 {
 _putchar(X);
 }
-if (X == 'z')
 _putchar('\n');
 }
 }
