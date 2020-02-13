@@ -13,9 +13,9 @@ for (j = 0; j < size; j++)
 {
 if (size > 0)
 {
-putchar('#');
+_putchar('#');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }
