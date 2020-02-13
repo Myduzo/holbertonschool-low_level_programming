@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _isdigit - check the code for Holberton School
+ * _isdigit - check the code for Holberton School students.
  * @c : int
- * Return: Always
+ * Return: Always 0.
  */
 int _isdigit(int c)
 {
