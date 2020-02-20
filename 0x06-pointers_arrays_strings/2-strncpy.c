@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcpy - check the code for Holberton School students.
+ * _strncpy - check the code for Holberton School students.
  * @dest : char
  * @src : char
  * @n : int
@@ -8,7 +8,8 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
+i
+	nt i;
 for (i = 0; src[i] != '\0'; i++)
 dest[i] = src[i];
 ;
