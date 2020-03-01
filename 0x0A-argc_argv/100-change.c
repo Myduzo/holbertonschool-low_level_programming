@@ -18,7 +18,7 @@ return (1);
 }
 else if (y <= 0)
 {
-puts("0");
+printf("0\n");
 return (1);
 }
 while (y != 0)
