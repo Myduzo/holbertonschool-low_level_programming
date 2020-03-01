@@ -18,7 +18,8 @@ return (1);
 }
 else if (y <= 0)
 {
-printf("0");
+puts("0");
+return (1);
 }
 while (y != 0)
 {
