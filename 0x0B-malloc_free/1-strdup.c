@@ -7,13 +7,13 @@
  * @n : unsigned int
  * Return: dest.
  */
- char *_memcpy(char *dest, char *src, unsigned int n)
- {
- unsigned int i;
- for (i = 0 ; i < n; i++)
- dest[i] = src[i];
- return (dest);
- }
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i;
+for (i = 0 ; i < n; i++)
+dest[i] = src[i];
+return (dest);
+}
  /**
  * _strlen - calculate string length.
  * @s: char
@@ -29,7 +29,7 @@ i++;
 return (i);
 }
 /**
- * *_strdup - duplicate string.
+ * _strdup - duplicate string.
  * @str: string.
  * Return: string.
  */
