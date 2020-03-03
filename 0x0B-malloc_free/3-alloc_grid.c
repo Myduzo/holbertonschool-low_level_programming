@@ -16,7 +16,7 @@ if (z == NULL)
 return (NULL);
 for (x = 0; x < height; x++)
 {
-z[x] = malloc(width * sizeof(*a));
+z[x] = malloc(width * sizeof(*z));
 if (z[x] == NULL)
 {
 free(z);
