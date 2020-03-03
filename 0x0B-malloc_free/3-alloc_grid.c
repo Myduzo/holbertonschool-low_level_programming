@@ -1,9 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
-* _strlen - calculate string length.
-* @s: string
-* Return: length i.
+* *alloc_grid - calculate string length.
+* @width: int
+* @height: int
+* Return: z.
 */
 int **alloc_grid(int width, int height)
 {
