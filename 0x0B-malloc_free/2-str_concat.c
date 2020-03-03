@@ -1,24 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _memcpy - copies two string.
- * @dest : char
- * @src : char
- * @n : unsigned int
- * Return: dest.
- */
- char *_memcpy(char *dest, char *src, unsigned int n)
- {
- unsigned int i;
- for (i = 0 ; i < n; i++)
- dest[i] = src[i];
- return (dest);
- }
- /**
- * _strlen - calculate string length.
- * @s: char
- * Return: string.
- */
+* _strlen - calculate string length.
+* @s: string
+* Return: length i.
+*/
 int _strlen(char *s)
 {
 int i = 0;
@@ -29,30 +15,39 @@ i++;
 return (i);
 }
 /**
- * *_strdup - duplicate string.
- * @str: string.
- * Return: string.
+ * _str_concat - a function that concatenates two strings.
+ * @s1 : char
+ * @s2 : char
+ * Return: two strings.
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-  unsigned int i, j;
-  char *p;
-  if (p == NULL)
-  {
-    return (NULL);
-  }
-  i = _strlen(str);
-  if (str != NULL)
-  {
-    p = malloc(sizeof(char) * (i + 1));
-  }
-  j = _memcpy(p, str, i + 1);
-  else
-  {
-    return ((char *)j);
-  }
-  else
-  {
-    return (NULL);
-  }
+char s3;
+int i = 0, j = 0;
+int x = _strlen(s1);
+int y = _strlen(s2);
+if (s1 == NULL)
+{
+s1 = malloc(sizeof(char));
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = malloc(sizeof(char));
+s2 = "";
+}
+s3 = malloc(sizeof(char) * (x + y + 1));
+if (s3 == NULL)
+return (NULL);
+while (i <= x)
+{
+s3[i] = s1[i];
+i++;
+}
+while (j <= y)
+{
+s3[x + j] = s2[j];
+j++;
+}
+return (s3);
 }
