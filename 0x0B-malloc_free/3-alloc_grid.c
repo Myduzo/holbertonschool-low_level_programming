@@ -21,7 +21,10 @@ for (i = 0; i < height; i++)
 {
 m[i] = malloc(sizeof(char) * width);
 if (m[i] == NULL)
+{
+free(m);
 return (NULL);
+}
 
 for (j = 0; j < width; j++)
 m[i][j] = 0;
