@@ -18,7 +18,7 @@ for (i = 0; s1[i] != '\0'; i++)
 ;
 for (j = 0; s2[j] != '\0'; j++)
 ;
-s3 = malloc((sizeof(char) * i) + (sizeof(char) * j) + 1);
+s3 = malloc((sizeof(char) * i) + (sizeof(char) * j));
 for (x = 0; x < i; x++)
 {
 s3[x] = s1[x];
