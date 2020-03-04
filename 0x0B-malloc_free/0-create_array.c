@@ -14,9 +14,9 @@ char *ar;
 ar = malloc(size * sizeof(char));
 if (ar != NULL)
 {
-while (i <= size)
+while (i < size)
 {
-ar[i] = c;
+ar[i] = c[i];
 i++;
 }
 return (ar);
