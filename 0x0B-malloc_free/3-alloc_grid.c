@@ -23,8 +23,10 @@ m[i] = malloc(sizeof(*m) * width);
 if (m[i] == NULL)
 {
 for (x = 0; x < i; x++)
+{
 free(m[x]);
 free(m);
+}
 return (NULL);
 }
 
