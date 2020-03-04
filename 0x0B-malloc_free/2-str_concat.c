@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _str_concat - a function that concatenates two strings.
+ * str_concat - a function that concatenates two strings.
  * @s1 : char
  * @s2 : char
  * Return: two strings.
@@ -20,8 +20,12 @@ for (j = 0; s2[j] != '\0'; j++)
 ;
 s3 = malloc((sizeof(char) * i) + (sizeof(char) * j) + 1);
 for (x = 0; x < i; x++)
+{
 s3[x] = s1[x];
+}
 for (y = 0; y < j; y++)
+{
 s3[x + y] = s2[y];
+}
 return (s3);
 }
