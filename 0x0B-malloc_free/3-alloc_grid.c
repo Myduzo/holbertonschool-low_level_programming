@@ -13,13 +13,13 @@ int **m;
 if ((width <= 0) || (height <= 0))
 return (NULL);
 
-m = malloc(sizeof(char) * height);
+m = malloc(sizeof(*m) * height);
 if (m == NULL)
 return (NULL);
 
 for (i = 0; i < height; i++)
 {
-m[i] = malloc(sizeof(char) * width);
+m[i] = malloc(sizeof(*m) * width);
 if (m[i] == NULL)
 {
 free(m);
