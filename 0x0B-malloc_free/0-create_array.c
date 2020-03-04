@@ -16,7 +16,7 @@ if (ar != NULL)
 {
 while (i < size)
 {
-ar[i] = c[i];
+ar[i] = c;
 i++;
 }
 return (ar);
