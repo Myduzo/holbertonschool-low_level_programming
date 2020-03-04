@@ -11,7 +11,8 @@ int i, j;
 char *p;
 if (str == NULL)
 return (NULL);
-for (i = 0; str[i] != '\0'; i++);
+for (i = 0; str[i] != '\0'; i++)
+;
 p = malloc(sizeof(char) * i);
 if (p == NULL)
 return (NULL);
