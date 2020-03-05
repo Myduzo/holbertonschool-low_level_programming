@@ -14,10 +14,6 @@ return (NULL);
 for (i = 0; i < size; i++)
 ;
 m = calloc(nmemb, size);
-if (!m)
-{
-return (NULL);
-}
 free(m);
 return (m);
 }
