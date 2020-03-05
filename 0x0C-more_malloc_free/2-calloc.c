@@ -13,7 +13,7 @@ if (nmemb == 0 || size == 0)
 return (NULL);
 for (i = 0; i < size; i++)
 ;
-m = calloc(size, nmemb);
+m = calloc(nmemb, size);
 if (!m)
 {
 return (NULL);
