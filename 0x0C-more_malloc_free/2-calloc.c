@@ -1,10 +1,9 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * string_nconcat - a function that concatenates two strings.
- * @n : unsigned int.
- * @s1 : char.
- * @s2 : char.
+ * _calloc - a function that concatenates two strings.
+ * @nmemb : unsigned int.
+ * @size : unsigned int.
  * Return: Always 0.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
