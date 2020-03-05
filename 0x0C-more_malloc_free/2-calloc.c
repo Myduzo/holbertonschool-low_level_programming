@@ -13,7 +13,7 @@ if (nmemb == 0 || size == 0)
 return (NULL);
 for (i = 0; i < size; i++)
 ;
-m = malloc(sizeof(unsigned int) * nmemb);
+m = calloc(size, nmemb);
 if (!m)
 {
 return (NULL);
