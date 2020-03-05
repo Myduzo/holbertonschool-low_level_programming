@@ -11,7 +11,7 @@ unsigned int i, *m;
 for (i = 0; i < b; i++)
 ;
 m = malloc(sizeof(unsigned int) * b);
-if (!m)
+if (m == NULL)
 {
 exit(98);
 }
