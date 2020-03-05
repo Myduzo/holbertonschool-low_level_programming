@@ -13,8 +13,7 @@ for (i = 0; i < b; i++)
 m = malloc(sizeof(unsigned int) * b);
 if (!m)
 {
-return (NULL);
+exit(98);
 }
-free(m);
 return (m);
 }
