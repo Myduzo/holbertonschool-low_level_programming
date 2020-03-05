@@ -8,11 +8,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i, *m;
-if (nmemb == 0 || size == 0)
+unsigned int *m;
+m = calloc(size, sizeof(unsigned int));
+if (!m)
 return (NULL);
-for (i = 0; i < size; i++)
-;
-m = calloc(nmemb, size);
+
+if (nmemb == 0 || size == 0)
+{
+return (NULL);
+}
+
 return (m);
 }
