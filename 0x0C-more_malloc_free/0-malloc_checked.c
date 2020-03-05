@@ -7,10 +7,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
-unsigned int i, *m;
-for (i = 0; i < b; i++)
-;
-m = malloc(sizeof(unsigned int) * b);
+unsigned int *m;
+m = malloc(b);
 if (m == NULL)
 {
 exit(98);

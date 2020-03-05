@@ -19,7 +19,7 @@ for (i = 0; s1[i] != '\0'; i++)
 ;
 for (j = 0; s2[j] < s2[n]; j++)
 ;
-s3 = malloc(sizeof(unsigned int) * n + 1);
+s3 = malloc((sizeof(char) * i) + (sizeof(char) * n) + 1);
 if (!s3)
 {
 return (NULL);
