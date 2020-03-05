@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _calloc - a function that concatenates two strings.
+ * _calloc - a function that allocates memory for an array, using malloc.
  * @nmemb : unsigned int.
  * @size : unsigned int.
  * Return: Always 0.

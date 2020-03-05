@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * malloc_checked - a function that concatenates two strings.
+ * malloc_checked -  a function that allocates memory using malloc.
  * @b : unsigned int
  * Return: Always 0.
  */
