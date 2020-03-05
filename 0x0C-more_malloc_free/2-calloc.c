@@ -9,14 +9,12 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int *m;
-m = calloc(size, sizeof(unsigned int));
+m = malloc(sizeof(unsigned int) * size);
 if (!m)
 return (NULL);
-
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-
 return (m);
 }
