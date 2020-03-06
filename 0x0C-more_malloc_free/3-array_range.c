@@ -12,7 +12,7 @@ int i, *m;
 int x = max - min + 1;
 if (min > max)
 return (NULL);
-m = malloc((sizeof(int) * min) + (sizeof(int) * max) + 1);
+m = malloc(sizeof(int) * x);
 if (!m)
 {
 return (NULL);
