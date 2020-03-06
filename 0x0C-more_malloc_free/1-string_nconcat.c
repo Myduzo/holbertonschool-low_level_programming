@@ -32,5 +32,6 @@ for (y = 0; y < n; y++)
 {
 s3[x + y] = s2[y];
 }
+s3[x + y] = '\0';
 return (s3);
 }
