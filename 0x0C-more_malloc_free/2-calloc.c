@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _calloc - a function that allocates memory for an array, using malloc.
  * @nmemb : unsigned int.
@@ -11,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 unsigned int i;
 char *m;
 m = malloc(size * nmemb);
-if (m == NULL)
+if (!m)
 return (NULL);
 if (nmemb == 0 || size == 0)
 {
