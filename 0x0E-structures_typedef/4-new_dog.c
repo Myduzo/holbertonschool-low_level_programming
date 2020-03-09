@@ -9,19 +9,19 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-  int i, j;
-  char *x, *y;
+int i, j;
+char *x, *y;
 for (i = 0; name[i] != 0; i++)
 ;
-  x = malloc(sizeof(char) * i);
-  if (!x)
-  return (NULL);
+x = malloc(sizeof(char) * i);
+if (!x)
+return (NULL);
 for (j = 0; owner[j] != 0; j++)
 ;
-  y = malloc(sizeof(char) * j);
-  if (!y)
-  return (NULL);
+y = malloc(sizeof(char) * j);
+if (!y)
+return (NULL);
 
-  return (x);
-  return (y);
+return (x);
+return (y);
 }
