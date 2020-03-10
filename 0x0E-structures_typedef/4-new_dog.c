@@ -19,7 +19,7 @@ return (NULL);
 
 for (i = 0; name[i] != '\0'; i++)
 ;
-x = malloc(sizeof(char) * i);
+x = malloc(sizeof(char) * i + 1);
 if (!x)
 {
 free(new);
@@ -31,7 +31,7 @@ x[t] = name[t];
 
 for (j = 0; owner[j] != '\0'; j++)
 ;
-y = malloc(sizeof(char) * j);
+y = malloc(sizeof(char) * j + 1);
 if (!y)
 {
 free(new);
