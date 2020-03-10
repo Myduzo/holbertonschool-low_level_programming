@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * int_dog - a function that initialize a variable of type struct dog.
+ * new_dog -  a function that creates a new dog.
  * @name : char
  * @age : float
  * @owner : char
@@ -9,19 +9,43 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int i, j;
+int i, j, t, u;
 char *x, *y;
-for (i = 0; name[i] != 0; i++)
+dog_t *new;
+
+new = malloc(sizeof(dog_t));
+if (!new)
+return (NULL);
+
+for (i = 0; name[i] != '\0'; i++)
 ;
 x = malloc(sizeof(char) * i);
 if (!x)
+{
+free(new);
 return (NULL);
-for (j = 0; owner[j] != 0; j++)
+}
+
+for (t = 0; t <= i; t++)
+x[t] = name[t];
+
+for (j = 0; owner[j] != '\0'; j++)
 ;
 y = malloc(sizeof(char) * j);
 if (!y)
+{
+free(new);
+free(x);
 return (NULL);
+}
 
-return (x);
-return (y);
+for (u = 0; u <= j; u++)
+y[u] = owner[u];
+
+
+new->name = x;
+new->owner = y;
+new->age = age;
+
+return (new);
 }
