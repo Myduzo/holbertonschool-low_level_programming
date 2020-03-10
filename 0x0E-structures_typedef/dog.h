@@ -1,7 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
-
-
+/**
+ * struct dog - def dog.
+ * @name : char
+ * @age : float
+ * @owner : char
+ */
 typedef struct dog
 {
 char *name;
