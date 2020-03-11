@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <stdlib.h>
+#include <stddef.h>
 /**
 * print_name - a function that executes a function given.
 * @array : int.
