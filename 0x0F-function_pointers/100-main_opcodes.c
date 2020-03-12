@@ -8,8 +8,6 @@
 */
 void main (int argc, char *argv[])
 {
-int x;
-x = atoi(argv[2]);
 
 if (argc != 2)
 printf("Error\n");
