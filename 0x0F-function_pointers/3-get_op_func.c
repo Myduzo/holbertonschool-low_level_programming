@@ -17,15 +17,14 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i;
+i = 0;
 
-for (i = 0; ops[i].op != NULL; i++)
+while (ops[i].op != NULL)
 {
-if (s != ops[i].op)
-{
+if (s == ops[i].op && *(s + 1) == '\0')
+return (ops[i].f);
+i++;
+}
 printf("Error\n");
 exit(99);
-}
-return (ops[i].f);
-}
-return (0);
 }
