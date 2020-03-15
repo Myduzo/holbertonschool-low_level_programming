@@ -8,30 +8,50 @@
 */
 void print_all(const char * const format, ...)
 {
-va_list formatlist;
-int x, i;
+va_list x;
+int i;
 
-va_start(formatlist, format);
+va_start(x, format);
 
-struct ceis {
-  c : char;
-  i : integer;
-  f : float;
-  s : char *;
-}
+lamis tab[] = {
+  {"c", _char},
+  {"i", _int},
+  {"f", _float},
+  {"s", _string};
+};
 
 i = 0;
 x = 0;
 while (format[i] != '\0')
 {
-va_arg(formatlist, char *);
 
-if (s == NULL)
+if (tab[i].ch == NULL)
 printf("(nil)");
 
-if ()
+if (format[i] == tab[i].ch)
+tab[i].f;
 i++;
 }
-va_end(formatlist);
+va_end(x);
 printf("\n");
+}
+
+void _char(va_list x)
+{
+printf("%c", va_arg(x, int));
+}
+
+void _int(va_list x)
+{
+printf("%i", va_arg(x, int));
+}
+
+void _float(va_list x)
+{
+printf("%f", va_arg(x, double));
+}
+
+void _string(va_list x)
+{
+printf("%s", va_arg(x, char *));
 }
