@@ -9,7 +9,6 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list newlist;
-int numbers = 0;
 unsigned int x;
 
 if (separator == NULL)
@@ -19,8 +18,7 @@ va_start(newlist, n);
 x = 0;
 while (x < n)
 {
-numbers = va_arg(newlist, int);
-printf("%d", numbers);
+printf("%d", va_arg(newlist, int));
 if (x != n - 1)
 {
 printf("%s", separator);
