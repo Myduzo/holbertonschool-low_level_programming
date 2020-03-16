@@ -15,8 +15,6 @@ unsigned int i, x;
 
 va_start(stringlist, n);
 
-if (separator == NULL)
-return;
 
 if (string == NULL)
 printf("(nil)");
@@ -27,8 +25,11 @@ while (x < n && i < n)
 {
 printf("%s", va_arg(stringlist, char*));
 i++;
+if (separator != NULL)
+{
 if (x != n - 1)
 printf("%s", separator);
+}
 x++;
 }
 va_end(stringlist);
