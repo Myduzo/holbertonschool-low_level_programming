@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 /**
 * print_numbers - a function that prints numbers, followed by a new line.
@@ -28,6 +27,7 @@ printf("%s", separator);
 }
 x++;
 }
+
 va_end(newlist);
 printf("\n");
 }
