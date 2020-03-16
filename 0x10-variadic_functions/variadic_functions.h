@@ -1,11 +1,16 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
-#include <stddef.h>
 
-typedef struct {
-  char ch;
-  void(*f)();
-}lamis;
+/**
+* struct lamis - typedef.
+* @ch  : char
+* @f : void
+*/
+typedef struct lamis
+{
+char ch;
+void (*f)();
+} lamis;
 
 
 
