@@ -9,9 +9,7 @@
 void print_all(const char * const format, ...)
 {
 va_list x;
-int i;
-
-va_start(x, format);
+int i, j;
 
 lamis tab[] = {
   {"c", _char},
@@ -20,16 +18,15 @@ lamis tab[] = {
   {"s", _string};
 };
 
+va_start(x, format);
+
 i = 0;
 x = 0;
 while (format[i] != '\0')
 {
 
-if (tab[i].ch == NULL)
-printf("(nil)");
-
-if (format[i] == tab[i].ch)
-tab[i].f;
+if (format[i] == tab[j].ch[0])
+tab[j].f(x);
 i++;
 }
 va_end(x);
@@ -53,5 +50,9 @@ printf("%f", va_arg(x, double));
 
 void _string(va_list x)
 {
-printf("%s", va_arg(x, char *));
+char *string;
+string = va_arg(x, char *);
+if (string == NULL)
+string = "(nil)";
+printf("%s", string);
 }
