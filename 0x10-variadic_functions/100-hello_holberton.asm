@@ -1,17 +1,15 @@
-global main
-
 section .data
 msg db "Hello, Holberton", 10 ;print message
-len equ $ - msg ;length of message
 
 section .text
+global main
 main:
 mov rax,1
 mov rdi,1
 mov rsi,msg
-mov rdx,len
-int 0x80
+mov rdx,17
+syscall
 
-mov rax,1
+mov rax,17
 mov rdi,0
-int 0x80
+syscall
