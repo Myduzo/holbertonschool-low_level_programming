@@ -1,18 +1,17 @@
-global _start
+global main
+
 section .data
-msg db "Hello, Holberton",0x0a ;print message
+msg db "Hello, Holberton", 10 ;print message
 len equ $ - msg ;length of message
 
-section .bss
-
 section .text
-_start:
-mov eax,4
-mov ebx,1
-mov ecx,msg
-mov edx,len
+main:
+mov rax,1
+mov rdi,1
+mov rsi,msg
+mov rdx,len
 int 0x80
 
-mov eax,1
-mov ebx,0
+mov rax,1
+mov rdi,0
 int 0x80
