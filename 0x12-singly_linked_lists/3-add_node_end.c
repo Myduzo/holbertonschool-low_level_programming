@@ -23,9 +23,8 @@ new->next = NULL;
 while (str[x] != '\0')
 {
 x++;
-}
 new->len = x;
-
+}
 
 if (*head == NULL)
 {
@@ -33,7 +32,7 @@ if (*head == NULL)
 return (NULL);
 }
 
-while (last->next != NULL)
+while (last->next != NULL && last != NULL)
 last = last->next;
 
 last->next = new;
