@@ -29,7 +29,7 @@ new->len = x;
 if (*head == NULL)
 {
 *head = new;
-return (NULL);
+return (*head);
 }
 
 while (last->next != NULL && last != NULL)
