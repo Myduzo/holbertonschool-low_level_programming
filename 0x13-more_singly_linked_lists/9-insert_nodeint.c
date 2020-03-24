@@ -14,17 +14,16 @@ unsigned int x = 0;
 
 listint_t *temp = *head;
 
-listint_t *new = malloc(sizeof(listint_t));
-if (new == NULL)
-return (NULL);
-
 while (temp && x < (idx - 1))
 {
 temp = temp->next;
 x++;
 }
+
 if (temp != NULL)
 {
+
+listint_t *new = malloc(sizeof(listint_t));
 if (new != NULL)
 {	
 new->n = n;
