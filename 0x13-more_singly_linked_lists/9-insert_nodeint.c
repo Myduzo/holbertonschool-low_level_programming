@@ -18,7 +18,7 @@ listint_t *new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 
-while (x < idx)
+while (temp && x < (idx - 1))
 {
 temp = temp->next;
 x++;
