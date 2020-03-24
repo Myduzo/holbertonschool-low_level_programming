@@ -4,10 +4,11 @@
 #include "lists.h"
 
 /**
-* free_listint - a function that frees a list
-* @head : node 
+* free_listint2 - a function that frees a list
+* @head : node
+*
 */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 listint_t *node;
 
@@ -17,4 +18,5 @@ node = head;
 head = head->next;
 free(node);
 }
+head = NULL;
 }
