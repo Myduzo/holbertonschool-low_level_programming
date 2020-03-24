@@ -14,7 +14,7 @@ listint_t *node;
 
 if (head != NULL)
 { 
-while (head != NULL)
+while (*head != NULL)
 {
 node = *head;
 *head = node->next;
