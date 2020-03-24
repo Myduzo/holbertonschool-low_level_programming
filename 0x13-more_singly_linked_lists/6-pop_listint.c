@@ -1,7 +1,5 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
 * pop_listint - a function that delets the head
@@ -10,27 +8,18 @@
 */
 int pop_listint(listint_t **head)
 {
-
-listint_t *node = *head, *prev;
+listint_t *node = *head;
+int data;
 
 if (node != NULL)
 {
+data = node->n;
 *head = node->next;
 free(node);
-return (0);
 }
 
-while (node != NULL)
-{
-prev = node;
-node = node->next;
-}
+else
+data = 0;
 
-if (node == NULL)
-return (0);
-
-prev->next = node->next;
-free(node);
-
-return (0);
+return (data);
 }
