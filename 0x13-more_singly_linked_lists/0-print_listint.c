@@ -17,10 +17,6 @@ const listint_t *head = h;
 x = 0;
 while (head != NULL)
 {
-if (head->n == 0)
-return (0);
-
-else
 printf("%d\n", head->n);
 head = head->next;
 x++;
