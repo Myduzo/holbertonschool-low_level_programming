@@ -12,16 +12,17 @@
 size_t print_listint(const listint_t *h)
 {
 unsigned int x;
+const listint_t *head = h; 
 
 x = 0;
-while (h != NULL)
+while (head != NULL)
 {
-if (h->n == 0)
+if (head->n == 0)
 return (0);
 
 else
-printf("%d\n", h->n);
-h = h->next;
+printf("%d\n", head->n);
+head = head->next;
 x++;
 }
 return (x);
