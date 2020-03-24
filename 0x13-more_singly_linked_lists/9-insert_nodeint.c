@@ -23,7 +23,8 @@ while (x < idx)
 temp = temp->next;
 x++;
 }
-
+if (temp != NULL)
+{
 if (new != NULL)
 {	
 new->n = n;
@@ -42,6 +43,6 @@ temp->next = new;
 
 return (new);
 }
-
+}
 return (NULL);
 }
