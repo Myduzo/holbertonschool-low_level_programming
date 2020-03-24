@@ -14,9 +14,8 @@ listint_t *node;
 
 while (head != NULL)
 {
-node = head;
-head = head->next;
+node = *head;
+*head = node->next;
 free(node);
 }
-head = NULL;
 }
