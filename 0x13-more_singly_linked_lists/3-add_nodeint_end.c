@@ -14,12 +14,11 @@ listint_t *new_node = malloc(sizeof(listint_t));
 
 listint_t *node = *head;
 
-new_node->n = n;
-new_node->next = NULL;
-
 if (!head || !new_node)
 return (NULL);
 
+new_node->n = n;
+new_node->next = NULL;
 if (*head == NULL)
 *head = new_node;
 
