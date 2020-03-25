@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
 * myStartup - a function that prints before main.
-* 
 */
 void myStartup(void)
 {
