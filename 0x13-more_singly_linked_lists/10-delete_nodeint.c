@@ -3,7 +3,7 @@
 /**
 * delete_nodeint_at_index - delete a node form the list.
 * @head : list
-* @index : int 
+* @index : int
 * Return: 1.
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
