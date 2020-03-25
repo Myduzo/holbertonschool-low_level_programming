@@ -9,12 +9,12 @@
 */
 void free_list(list_t *head)
 {
-list_t *one;
+list_t *node;
 
 while (head != NULL)
 {
-one = head;
+node = head;
 head = head->next;
-free(one);
 }
+free(node);
 }
