@@ -5,7 +5,7 @@
 
 /**
 * free_listint2 - a function that frees a list
-* @head : node
+* @head : node.
 *
 */
 void free_listint2(listint_t **head)
