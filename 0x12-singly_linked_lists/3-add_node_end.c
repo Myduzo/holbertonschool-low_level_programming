@@ -30,7 +30,7 @@ if (*head == NULL)
 return (new);
 }
 
-while (last->next != NULL && last != NULL)
+while (last->next != NULL)
 last = last->next;
 
 last->next = new;
