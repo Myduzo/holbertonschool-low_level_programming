@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -21,15 +20,14 @@ new->str = strdup(str);
 new->next = NULL;
 
 while (str[x] != '\0')
-{
 x++;
+
 new->len = x;
-}
 
 if (*head == NULL)
 {
 *head = new;
-return (*head);
+return (NULL);
 }
 
 while (last->next != NULL && last != NULL)
