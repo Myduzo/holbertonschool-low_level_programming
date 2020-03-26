@@ -11,7 +11,7 @@ unsigned int x = 0;
 if (!index && !n)
 return (-1);
 
-if (index > 0)
+if (index < sizeof(n) * 8)
 x = n >> index;
 return (x & 1);
 }
