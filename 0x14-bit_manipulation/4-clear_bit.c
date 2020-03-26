@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* set_bit - set a bit
+* clear_bit - clear a bit
 * @n : decimal number
 * @index : bit place
 * Return: 1.
