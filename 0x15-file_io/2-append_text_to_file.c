@@ -17,8 +17,14 @@ return (-1);
 if (filename == NULL)
 return (-1);
 
+if (text_content)
+{
 for (; text_content[x]; x++)
 ;
+}
+
+else
+text_content = "";
 
 wt = write(fd, text_content, x);
 
