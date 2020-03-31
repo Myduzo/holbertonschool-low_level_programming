@@ -17,14 +17,20 @@ return (0);
 if (filename == NULL)
 return (-1);
 
-while (text_content[x])
-x++;
+if (text_content)
+{
+for (; text_content[x]; x++)
+;
+}
+
+else
+text_content = "";
 
 wt = write(fd, text_content, x);
 
 if (wt == -1)
 return (-1);
 
-close (fd);
+close(fd);
 return (1);
 }
