@@ -12,7 +12,7 @@ int fd, x = 0, wt;
 fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 if (fd == -1)
-return (0);
+return (-1);
 
 if (filename == NULL)
 return (-1);
