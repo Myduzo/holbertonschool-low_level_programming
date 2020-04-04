@@ -35,5 +35,6 @@ y = x + 2;
 x++;
 u++;
 }
+putchar('\n');
 return (0);
 }
