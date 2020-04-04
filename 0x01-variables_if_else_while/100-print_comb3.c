@@ -6,17 +6,27 @@
  */
 int main(void)
 {
-int i, j;
-for (i = 0; i < 10; i++)
-for (j = i + 1; j < 10; j++)
+int x = 0, y = 0, q = 1;
+while (x < 10)
 {
-if (i != j || j != i)
+while (y < 10)
 {
-putchar(i + '0');
-putchar(j + '0');
-putchar(44);
-putchar(32);
+if ((x == 8 && y == 9) || (y >= q && x != 8))
+{
+putchar(x + '0');
+putchar(y + '0');
 }
+if (y >= q && x != 8)
+{
+putchar(',');
+putchar(' ');
 }
+y++;
+}
+y = 0;
+q++;
+x++;
+}
+putchar('\n');
 return (0);
 }
