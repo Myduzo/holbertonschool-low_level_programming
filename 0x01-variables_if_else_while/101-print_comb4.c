@@ -6,19 +6,35 @@
  */
 int main(void)
 {
-int i, j, k;
-for (i = 0; i < 10; i++)
-for (j =  i + 1; j < 10; j++)
-for (k = j + 1; k < 10; k++)
+int x = 0, y = 1, z = 2, q = 2, u = 2;
+while (x < 10)
 {
-if (i != j || j != i)
+while (y < 9)
 {
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
-putchar(44);
-putchar(32);
+while (z < 10)
+{
+if (z >= q && y != z)
+{
+putchar(x + '0');
+putchar(y + '0');
+putchar(z + '0');
+if (u != 9)
+{
+putchar(',');
+putchar(' ');
 }
 }
+z++;
+}
+z = u + 1;
+q++;
+y++;
+}
+q = 2;
+y = x + 2;
+x++;
+u++;
+}
+putchar('\n');
 return (0);
 }
