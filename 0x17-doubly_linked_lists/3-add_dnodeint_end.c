@@ -13,13 +13,11 @@ if (new == NULL)
 return (NULL);
 
 new->n = n;
-new->next = NULL;
-new->prev = NULL;
 
 if (*head == NULL)
 {
 *head = new;
-return (*head);
+return (new);
 }
 
 tmp = *head;
@@ -27,8 +25,9 @@ while (tmp->next)
 {
 tmp = tmp->next;
 }
+new->prev = tmp;
+new->next = NULL;
 tmp->next = new;
-tmp->prev = *head;
 
-return (tmp);
+return (new);
 }
