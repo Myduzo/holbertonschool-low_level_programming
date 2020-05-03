@@ -13,11 +13,15 @@ if (new == NULL)
 return (NULL);
 
 if (!head)
-return(NULL);
+return (NULL);
 
 new->n = n;
 new->prev = NULL;
 new->next = *head;
+
+if (new->next)
+new->next->prev = new;
+
 *head = new;
 
 return (new);
