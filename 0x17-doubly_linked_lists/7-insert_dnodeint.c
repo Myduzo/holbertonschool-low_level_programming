@@ -29,10 +29,12 @@ new->prev = tmp;
 new->next = tmp->next;
 tmp->next = new;
 return (new);
+
+if (idx == 0)
+*h = new;
 }
 tmp = tmp->next;
 idx--;
 }
-free(new);
 return (NULL);
 }
