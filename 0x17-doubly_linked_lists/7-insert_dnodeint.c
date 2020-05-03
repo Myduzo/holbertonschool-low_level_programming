@@ -28,14 +28,15 @@ return (new);
 tmp = *h;
 while (tmp)
 {
-if (x == idx && tmp->next == NULL)
+if (x == idx - 1 && tmp->next == NULL)
 return (add_dnodeint_end(h, n));
 
-if (x == idx)
+if (x == idx - 1)
 {
 new->next = tmp->next;
 new->prev = tmp;
 tmp->next = new;
+tmp = new;
 tmp->next->prev = new;
 return (new);
 }
