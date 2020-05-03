@@ -36,7 +36,6 @@ if (x == idx)
 new->next = tmp->next;
 new->prev = tmp;
 tmp->next = new;
-tmp = new;
 tmp->next->prev = new;
 return (new);
 }
