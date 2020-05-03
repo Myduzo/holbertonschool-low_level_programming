@@ -19,6 +19,12 @@ new->n = n;
 if (!h)
 return (NULL);
 
+if (idx == 0)
+{
+new_node = add_dnodeint(h, n);
+return (new_node);
+}
+
 tmp = *h;
 while (tmp)
 {
