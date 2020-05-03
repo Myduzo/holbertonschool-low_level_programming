@@ -22,6 +22,9 @@ return (NULL);
 tmp = *h;
 while (tmp)
 {
+if (x == idx && tmp->next == NULL)
+return (add_dnodeint_end(h, n));
+
 if (x == idx)
 {
 new->next = tmp->next;
@@ -34,8 +37,6 @@ return (new);
 tmp = tmp->next;
 x++;
 }
-if (x == idx)
-return (add_dnodeint_end(h, n));
 
 return (NULL);
 }
