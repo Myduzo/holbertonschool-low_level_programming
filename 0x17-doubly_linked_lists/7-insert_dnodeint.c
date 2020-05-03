@@ -33,5 +33,6 @@ return (new);
 tmp = tmp->next;
 idx--;
 }
+free(new);
 return (NULL);
 }
