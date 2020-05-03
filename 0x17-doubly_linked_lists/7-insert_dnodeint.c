@@ -15,8 +15,6 @@ if (!new)
 return (NULL);
 
 new->n = n;
-new->prev = NULL;
-new->next = NULL;
 
 if (!h)
 return (NULL);
@@ -26,9 +24,11 @@ while (tmp)
 {
 if (x == idx)
 {
-new->prev = tmp;
 new->next = tmp->next;
+new->prev = tmp;
 tmp->next = new;
+tmp = new;
+tmp->next->prev = new;
 return (new);
 }
 tmp = tmp->next;
