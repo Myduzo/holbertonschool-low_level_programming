@@ -21,8 +21,8 @@ return (NULL);
 
 if (idx == 0)
 {
-new_node = add_dnodeint(h, n);
-return (new_node);
+new = add_dnodeint(h, n);
+return (new);
 }
 
 tmp = *h;
