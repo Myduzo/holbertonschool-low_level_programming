@@ -6,19 +6,16 @@ NAME=holberton
 RM=rm -f
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
+all: $(OBJ)	
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-.PHONY: clean
-clean:
+.PHONY: clean oclean fclean
+clean: 
 	$(RM) *~ $(NAME)
 
-.PHONY: oclean
-
-oclean:
+oclean: 
 	$(RM) $(OBJ)
 
-.PHONY: fclean
 fclean: clean oclean
 
 re: oclean all
