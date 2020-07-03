@@ -1,17 +1,14 @@
 # Create CFLAGS that executes with the gcc compiler.
 CC=gcc
+CFLAGS=-Wall -Werror -Wextra -pedantic
 SRC=main.c holberton.c
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 RM=rm -f
-CFLAGS=-Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-ifeq ($(OBJ),.o)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-else
 	$(CC) $(OBJ) -o $(NAME)
-endif
+
 clean:
 	$(RM) *~ $(NAME)
 
