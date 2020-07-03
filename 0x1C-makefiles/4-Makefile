@@ -1,10 +1,10 @@
 # Create CFLAGS that executes with the gcc compiler.
 CC=gcc
-CFLAGS=-Wall -Werror -Wextra -pedantic
 SRC=main.c holberton.c
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 RM=rm -f
+CFLAGS=-Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -18,3 +18,4 @@ oclean:
 fclean: clean oclean
 
 re: oclean all
+
