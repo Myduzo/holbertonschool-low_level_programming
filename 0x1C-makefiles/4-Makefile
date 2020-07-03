@@ -7,8 +7,11 @@ RM=rm -f
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
+ifeq ($(OBJ),.o)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+else
 	$(CC) $(OBJ) -o $(NAME)
-
+endif
 clean:
 	$(RM) *~ $(NAME)
 
